@@ -7,11 +7,7 @@ The MakeChange program allows a user to enter the price of an item followed by t
 
 The user will first enter the price of the object. The user will then enter the amount paid for the item. If the amount paid matches the price of the item, the system will notify the user no change is due. If the amount paid is less than the price of the item, the user will be notified they need to increase the amount paid.
 ### Technologies:
-
-Conditionals
-Modulus operator
-
-Use larges modular to calculate down resetting the total each time.
+The main technologies leveraged in this project were conditional statements. Future iterations would break things down into separate methods and potentially use a for loop to calculate each increment of change.
 
 ### Lessons Learned:
 Had an issue with rounding when aggregating the penny denomination. A round statement was inserted to resolve the issue.
