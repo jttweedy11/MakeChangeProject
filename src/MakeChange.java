@@ -62,28 +62,47 @@ public class MakeChange {
 		}
 		
 		if(twenties > 0) {
-			System.out.print(twenties + "Twenties ");
+			System.out.print(twenties + " Twenty ");
 		}
 		if(tens > 0) {
-			System.out.print(tens + " Tens ");
+			System.out.print(tens + "ten");
 		}
 		if(fives > 0) {
-			System.out.print(fives + " fives ");
+			System.out.print(fives + " five ");
 		}
 		if(ones > 0) {
-			System.out.print(ones + " ones ");
+			if(ones > 1) {
+				System.out.print(ones + " ones ");
+			}
+			else 
+				System.out.print(ones + " one ");
 		}
 		if(quarters > 0) {
-			System.out.print(quarters + " quarters ");
+			if(quarters > 1) {
+				System.out.print(quarters + " quarters ");
+			}
+			else System.out.print(quarters + " quarter ");
 		}
 		if(dimes > 0) {
-			System.out.print(dimes + " dimes ");
+			if(dimes > 1) {
+				System.out.print(dimes + " dimes ");
+			}
+			else
+				System.out.print(dimes + " dime ");
 		}
 		if(nickles > 0) {
-			System.out.print(nickles + " nickles ");
+			if(nickles > 1) {
+				System.out.print(nickles + " nickles ");
+			}
+			else
+				System.out.print(nickles + " nickle ");
 		}
 		if(pennies > 0) {
-			System.out.print(pennies + " pennies ");
+			if(pennies > 1) {
+				System.out.print(pennies + " pennies ");
+			}
+			else
+				System.out.print(pennies + " penny ");
 		}
 		input.close();
 	}
