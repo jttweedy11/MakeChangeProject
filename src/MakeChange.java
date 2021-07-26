@@ -57,34 +57,33 @@ public class MakeChange {
 		}
 //		$0.01 check
 		if(change >= 0.01) {
-			pennies = (int)(change/ 0.01);
+			pennies = (int)Math.round(change/ 0.01);
 			change = (change - (pennies * 0.01));
 		}
 		
 		if(twenties > 0) {
-			System.out.print(twenties + "Twenties");
-			System.out.println(tens);
+			System.out.print(twenties + "Twenties ");
 		}
 		if(tens > 0) {
-			System.out.print(tens + " Tens");
+			System.out.print(tens + " Tens ");
 		}
 		if(fives > 0) {
-			System.out.print(fives + " fives");
+			System.out.print(fives + " fives ");
 		}
 		if(ones > 0) {
-			System.out.print(ones + " ones");
+			System.out.print(ones + " ones ");
 		}
 		if(quarters > 0) {
-			System.out.print(quarters + " quarters");
+			System.out.print(quarters + " quarters ");
 		}
 		if(dimes > 0) {
-			System.out.print(dimes + " dimes");
+			System.out.print(dimes + " dimes ");
 		}
 		if(nickles > 0) {
-			System.out.print(nickles + " nickles");
+			System.out.print(nickles + " nickles ");
 		}
 		if(pennies > 0) {
-			System.out.print(pennies + " pennies");
+			System.out.print(pennies + " pennies ");
 		}
 		input.close();
 	}
